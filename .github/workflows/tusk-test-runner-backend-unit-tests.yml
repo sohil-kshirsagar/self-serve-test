@@ -52,7 +52,7 @@ jobs:
           # services, create a separate workflow for each service with a different (and non-overlapping) appDir.
           # appDir should be relative to the root of the repo.
           # Remove this input if this doesn't apply to your repo (i.e., it is a single-service repo).
-          # appDir: "backend"
+          appDir: "backend"
 
           # You may specify the test framework if it is a different one
           testFramework: "pytest"
