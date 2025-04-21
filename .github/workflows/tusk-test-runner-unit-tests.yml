@@ -7,9 +7,9 @@ on:
       runId:
         description: "Tusk Run ID"
         required: true
-      tuskUrl:
-        description: "Tusk server URL"
-        required: true
+      # tuskUrl:
+      #   description: "Tusk server URL"
+      #   required: true
       commitSha:
         description: "Commit SHA to checkout"
         required: true
