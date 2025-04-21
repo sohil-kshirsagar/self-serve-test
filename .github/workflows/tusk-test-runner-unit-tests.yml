@@ -7,9 +7,9 @@ on:
       runId:
         description: "Tusk Run ID"
         required: true
-      # tuskUrl:
-      #   description: "Tusk server URL"
-      #   required: true
+      tuskUrl:
+        description: "Tusk server URL"
+        required: true
       commitSha:
         description: "Commit SHA to checkout"
         required: true
@@ -68,7 +68,7 @@ jobs:
 
           # The script to run to test the code (adapt accordingly). Required for the test runner.
           # {{file}} placeholder is required and will be replaced by Tusk with the file being tested.
-          testScript: pytes {{file}}
+          # testScript: pytes {{file}}
 
           # The script to run to generate a coverage report (only supported if testFramework is "pytest" or "jest").
           # {{testFilePaths}} placeholder is required and will be replaced by Tusk with the files (space-separated) being tested.
