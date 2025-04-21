@@ -52,7 +52,7 @@ jobs:
           # services, create a separate workflow for each service with a different (and non-overlapping) appDir.
           # appDir should be relative to the root of the repo.
           # Remove this input if this doesn't apply to your repo (i.e., it is a single-service repo).
-          appDir: "backend"
+          # appDir: "backend"
 
           # You may specify the test framework if it is a different one
           testFramework: "pytest"
@@ -68,7 +68,7 @@ jobs:
 
           # The script to run to test the code (adapt accordingly). Required for the test runner.
           # {{file}} placeholder is required and will be replaced by Tusk with the file being tested.
-          testScript: pytes {{file}}
+          testScript: pytest {{file}}
 
           # The script to run to generate a coverage report (only supported if testFramework is "pytest" or "jest").
           # {{testFilePaths}} placeholder is required and will be replaced by Tusk with the files (space-separated) being tested.
