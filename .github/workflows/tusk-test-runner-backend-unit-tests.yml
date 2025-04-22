@@ -36,7 +36,7 @@ jobs:
         uses: Use-Tusk/test-runner@v1
         with:
           # Required for the test runner, do not remove this input
-          # runId: ${{ github.event.inputs.runId }}
+          runId: ${{ github.event.inputs.runId }}
 
           # Required for the test runner, do not remove this input
           tuskUrl: ${{ github.event.inputs.tuskUrl }}
