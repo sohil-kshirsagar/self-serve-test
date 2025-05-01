@@ -63,7 +63,7 @@ jobs:
           # services, create a separate workflow for each service with a different (and non-overlapping) appDir.
           # appDir should be relative to the root of the repo.
           # Remove this input if this doesn't apply to your repo (i.e., it is a single-service repo).
-          appDir: "backend"
+          # appDir: "backend"
 
           # You may specify the test framework if it is a different one
           testFramework: "pytest"
@@ -76,12 +76,12 @@ jobs:
           # {{file}} placeholder is required and will be replaced by Tusk with the file being linted.
           # If you don't have a lint command, you can remove this input.
           # e.g. for a Python project, this would be "black {{file}}"
-          lintScript: '<your lint command for {{file}}>'
+          # lintScript: '<your lint command for {{file}}>'
 
           # The script to run to test the code (adapt accordingly). Required for the test runner.
           # {{file}} placeholder is required and will be replaced by Tusk with the file being tested.
           # e.g. for a Python project, this would be "pytest {{file}}"
-          testScript: '<your test command for {{file}}>'
+          testScript: "pytest {{file}}"
 
           # The runner may run tests in parallel.
           # Set this value to 1 if you know that your tests should not be run concurrently.
