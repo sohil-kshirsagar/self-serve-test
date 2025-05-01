@@ -81,7 +81,7 @@ jobs:
           # The script to run to test the code (adapt accordingly). Required for the test runner.
           # {{file}} placeholder is required and will be replaced by Tusk with the file being tested.
           # e.g. for a Python project, this would be "pytest {{file}}"
-          testScript: "pytest {{file}}"
+          testScript: ". myenv/bin/activate && pytest {{file}}"
 
           # The runner may run tests in parallel.
           # Set this value to 1 if you know that your tests should not be run concurrently.
