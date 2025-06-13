@@ -6,6 +6,6 @@ def capitalize_first_letter(string):
 
 def capitalize_last_letter(string):
     """
-    Capitalize the last letter of a string
+    Capitalize the last alphabet letter of a string
     """
     return string[:-1] + string[-1].upper()
