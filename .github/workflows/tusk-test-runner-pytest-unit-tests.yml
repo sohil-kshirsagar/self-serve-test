@@ -44,7 +44,7 @@ jobs:
 
       - name: Start runner
         id: test-action
-        uses: Use-Tusk/test-runner@v1
+        uses: Use-Tusk/test-runner@main
         with:
           # Required for the test runner, do not remove this input
           runId: ${{ github.event.inputs.runId }}
